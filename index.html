@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <p>ITMD 441 - Lab3 - Jiahao Zhang</p>
+        </div>
+        <h1>Tip Calculator</h1>
+        <form id="tipCalculatorForm">
+            <div class="form">
+                <label for="billTotal">Bill Total:</label>
+                <input type="text" id="billTotal" name="billTotal" required>
+                <div id="error-message" class="error-message" style="display: none;">Invalid input value.(please input number greater than 0)</div>
+            </div>
+            <div class="form">
+                <label for="tip">Tip:</label>
+                <input type="range" id="tip" name="tip" min="0" max="100">
+            </div>
+            <div class="form">
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="text" id="tipPercentage" name="tipPercentage" disabled>
+            </div>
+            <div class="form">
+                <label for="tipAmount">Tip Amount:</label>
+                <input type="text" id="tipAmount" name="tipAmount" disabled>
+            </div>
+            <div class="form">
+                <label for="totalBill">Total Bill with Tip:</label>
+                <input type="text" id="totalBill" name="totalBill" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
