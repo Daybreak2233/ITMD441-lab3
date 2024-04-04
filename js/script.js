@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function calculateTip() {
         const billTotal = parseFloat(billTotalInput.value);
 
-        if (isNaN(billTotal) || billTotal < 0) {
+        if (isNaN(billTotal) || billTotal < 0 || !/^\d+(\.\d+)?$/.test(billTotalInput.value)) {
             errorMessage.style.display = "block";
             return;
         } else {
